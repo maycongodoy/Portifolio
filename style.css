@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+.menu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu_line {
+    height: 3px;
+    background-color: black;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.container .leftside {
+    flex: 1;
+    background-image: linear-gradient(#fdfdfd, #444343);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.container .rightside {
+    flex: 1;
+    background-image: url('./imagens/image2.png');
+    background-size: cover;
+    background-position: center;
+} 
+.info {
+
+}
+.profession {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.name {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.buttons a{
+    display: inline-block;
+    background-color: #FFF;
+    color: rgb(31, 3, 3);
+    padding: 20px 40px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.buttons a.light {
+    background-color: #f40938;
+}
+.buttons a:hover {
+    opacity: 0.7;
+}
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 11px;
+    color: #f40938;
+}
+
+@media (max-width: 1058px) {
+    body {
+        height: calc(100vh - 74px);
+    }
+    header {
+        position: initial;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    .leftside {
+        flex: none;
+        justify-content: center;
+    }
+    .rightside {
+       flex: none;
+       
+       background-position: center;
+       
+    }
+    .profession {
+        font-size: 20px;
+    }
+    .name {
+        font-size: 40px;
+    }
+    .buttons a {
+        max-width: 116px;
+    }
+    footer {
+        color:#f40938;
+        font-size: 10px;        
+    }    
+}
+
+@media (max-width: 462px) {
+    body {
+        height: calc(100vh - 74px);
+    }
+    .leftside {
+        max-height: 50%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+    .profession {
+        font-size: 15px;
+    }
+    .name {
+        font-size: 20px;
+        
+    }
+    .buttons  {
+        display: flex;
+        
+    }
+     .info .buttons a {
+        font-size: 12px;
+     }
+    footer {
+        color:#f40938;
+        font-size: 8px;        
+    }   
+    .bbranco {
+        margin: auto;
+    }
+}
